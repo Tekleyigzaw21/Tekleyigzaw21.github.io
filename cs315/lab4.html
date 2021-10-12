@@ -1,0 +1,330 @@
+<html>
+
+<head>
+    <h1>Your App</h1>
+</head>
+
+<body>
+    <br>
+    <input type="checkBox" name="lattuceName" value="lattuce" /> A
+    <input type="checkbox" name="lattuceName" value="lettec" /> B+
+    <input type="checkbox" name="lattuceName" value="Orange" /> A+
+    <input type="checkbox" name="lattuceName" value="cabage" /> A-
+    <br></br>
+    <input type="radio" ,id="c++" name="l-languge" value="loop">
+    <label for="C++">C++</label><br>
+    <input type="radio" ,id="html" name="l-language" value="html">
+    <label for="html">HTML</label><br>
+    <input type="radio" ,id="Css" name="l-language" value="sheet">
+    <label for="Css">CSS</label><br>
+    <input type="radio" ,id="javascript" name="l-language" value="js">
+    <label for="javascript">JavaScript</label><br>
+    <input type="radio" , id="C#" name="l-language" value="node">
+    <label for="C#">C#</label>
+    <br></br>
+    <singel selection>
+        <select name="multiselect">
+            <option>Tekle</option>
+            <option>getu</option>
+            <option>Dereb</option>
+            <option>Dany</option>
+            <option>Kalab</option>
+        </select><br></br>
+        <!-- <for multy selection> size is numbers of vesible value and selected is for numbers select -->
+
+        <select name="favorite" size="5" multiple>
+            <option selected>tekletsadik</option>
+            <option>Getu</option>
+            <option>Tekle</option>
+            <option>Dereb</option>
+            <option selected>Yigzaw</option>
+        </select>
+        <br></br>
+
+        <!-- <grouping selection > -->
+        <select name="feve">
+            <optgrop label="majore">
+                <option>Tekle</option>
+                <option>Getu</option>
+                <option>Dereb</option>
+            </optgrop>
+            <optgroup label="minor">
+                <option>Dany</option>
+                <option>Kalab</option>
+                <option>Kebu</option>
+            </optgroup>
+        </select>
+        <p> <input type="button" onclick="add()" value="clik me"></p>
+
+        <script>
+            function add() {
+                //byname is the collection b/c all have to be the same name //the only b/n Check boox and check radio is type radio and checkbox and radio for a unique selection(only one) but check boox is we can more than once
+                let checkbox1 = document.getElementsByName("checkboxName");
+                for (let ele of checkbox1) {
+                    alert(ele.checked + " " + ele.value);
+                }
+                let checkbox1 = document.getElementsByName("l-language");
+                for (let ele of checkbox1) {
+                    alert(ele.checked + " " + ele.value);
+
+                    let singleselect = document.getElementsByName("favere");
+                    getSelectValue(singleselect[0]);
+                }
+            }
+            function getSelectValue(select) {
+                let result = [];
+                let options = select && select.options
+                let opt;
+                for (let i = 0; i < options.length; i++) {
+                    opt = options[i];
+                    if (opt.selected) {
+                        result.push(opt.value || opt.text);
+                    }
+                }
+                alert(result);
+            }
+
+
+
+    // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//     //    <html> 
+
+// // <head></head> 
+
+// // <body> 
+
+// //     <label for ="flowers">Flowers</label>
+
+// //     <ol> 
+
+// //         <li> Rose</li> 
+
+// //         <li>Chamalion</li> 
+
+// //     </ol> 
+
+// //     <div> 
+
+// //         <label for ="fruits">Fruits</label>
+
+// //         <ol> 
+
+// //             <li>Mango</li> 
+
+// //             <li>Pear</li> 
+
+// //         </ol>
+
+// // </body>
+
+// // <html></html>  
+
+// // 1. Write Javascript code to underline all the first element of ol (Rose,Mango should be underlined)
+
+
+// // 2. a. Apply red color to the label, Fruits (Javascript)
+
+// //    b. Same as(a) with CSS
+
+// // 1. Create the Html Page(please see attachment)
+
+// //  Select Role options: QA Engineer, Software Intern, Software Developer
+
+// // Specific Skills - Allow Multiple Selection (all options are shown on the page).
+
+// // 2. If Input field is focussed, (User starts typing the value ) turn the background color to blue , once User leaves the field, turn the background color to white( Hint, use onfocus and onblur event listeners).
+
+// // 3. If User selects Java, Specific Skills should display Java options only
+
+// // If User selects Javascript , Specific Skills should display Javascript options only
+
+// // If User selects both, Specific Skills should display both options.
+
+// // (Add onclick event listener to the checkbox )
+
+// // 4. On submit,  alert should show the selected values  of  Specific Skills.
+
+
+//         </script>
+</body>
+
+//
+
+</html>
+
+
+<!-- MocQ1 -->
+<html>
+
+<head>
+    <style>
+        /* label[for='fruits']{
+            color:red;
+        } */
+        div label {
+            color: red;
+        }
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
+    <p><bdo dir="ltl">I am here</bdo></p>
+    <label for="flowers">Flowers</label>
+    <ol>
+        <li> Rose</li>
+        <li>Chamalion</li>
+    </ol>
+    <div>
+        <label for="fruits">Fruits</label>
+        <ol>
+            <li>Mango</li>
+            <li>Pear</li>
+        </ol>
+
+        <script>
+        //document.querySelector("label[for='fruits']").style.color="red"
+
+        //document.querySelector("ol li").style.textDecoration="underline";
+        //document.querySelector("div ol li").style.textDecoration="underline";
+
+        // document.querySelectorAll("ol li")[0].style.textDecoration="underline";
+        // document.querySelectorAll("ol li")[2].style.textDecoration="underline";
+        </script>
+
+
+        <!-- 1. Write Javascript code to underline all the first element of ol (Rose,Mango should be underlined)
+    2. a. Apply red color to the label, Fruits (Javascript)
+       b. Same as(a) with CSS -->
+    </div>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
+
+<!-- MocQ2 -->
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 10px
+        }
+
+        label {
+            width: 10%;
+            display: inline-block;
+        }
+
+        input[type="text"] {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
+    <h1> Your Job Application</h1>
+    <p>
+        <label for="fullName">Full Name</label>
+        <input type="text" value="My Name" onfocus="turnRed(this)" onblur="turnwhite(this)">
+    </p>
+    <p>
+        <label for="">Email</label>
+        <input type="text" id="first" value="">
+    </p>
+
+    <p>
+        <label for="select">Select Role</label>
+
+        <select name="role">Role
+            <option value="QA">QA Engineer</option>
+            <option value="intern">Software Intern</option>
+            <option value="developer">Software Developer</option>
+        </select>
+        <!-- <myowntag newI="ree" >sdfsdfsdff</myowntag> -->
+        <!-- document.querySelector("myowntag[newI='ree']");
+            .innerHTML -->
+    </p>
+    <p>
+        Skill sets<br>(Select all that apply)
+
+        <input type="checkbox" value="java" name="check" onclick="checkMe(this)">Java
+        <input type="checkbox" value="javascript" name="check" onclick="checkMe(this)">Javascript
+        <br>
+    </p>
+    <p>
+        <label for="select">Specific Skills</label>
+        <select name="specificSkills" multiple="" size="7" style="width:20%"> ​
+            <optgroup label="Java" id="optgroupJava"> ​
+                <option value="J2EE">J2EE</option> ​
+                <option value="Spring">Spring</option>​
+                <option value="Hibernate">Hibernate</option>​
+            </optgroup> ​
+            <optgroup label="Javascript" id="optgroupJavascript"> ​
+                <option value="ReatJS">ReatJS</option> ​
+                <option value="AngularJS">AngularJS</option> ​
+            </optgroup> ​
+        </select>
+    </p>
+    <p>
+        <input type="submit" value="Submit" onclick="submit()">
+    </p>
+    <p></p>
+    <p></p>
+    <script>
+        function submit() {
+            let select = document.getElementsByName("specificSkills")[0];
+            let values = ""
+            for (let eachControl of select.options) {
+                console.log(eachControl.value, eachControl.selected);
+                if (eachControl.selected)
+                    values += eachControl.value;
+            }
+            alert(values)
+        }
+        function turnRed(inputField) {
+            // document.getElementById("first")
+            inputField.style.backgroundColor = "green";
+        }
+        function turnwhite(inputField) {
+            inputField.style.backgroundColor = "white";
+        }
+        function checkMe(inputField) {
+            let controls = document.getElementsByName("check");
+            let value = [];
+            for (let eachControl of controls) {
+                console.log(eachControl, eachControl.checked);
+                if (eachControl.checked)
+                    value.push(eachControl.value);
+            }
+            if (value.length == 1 && value[0] == "java") {
+                let optGroup = document.getElementById("optgroupJavascript");
+                optGroup.style.display = "none";
+                let optGroup1 = document.getElementById("optgroupJava");
+                optGroup1.style.display = "";
+                console.log(" Ins ide java ")
+            } else if (value.length == 1 && value[0] == "javascript") {
+                let optGroup = document.getElementById("optgroupJava");
+                optGroup.style.display = "none";
+                let optGroup1 = document.getElementById("optgroupJavascript");
+                optGroup1.style.display = "";
+                console.log(" Ins ide javascript ")
+            } else if (value.length == 2) {
+                let optGroup = document.getElementById("optgroupJava");
+                optGroup.style.display = "";
+                let optGroup1 = document.getElementById("optgroupJavascript");
+                optGroup1.style.display = "";
+                console.log(" Ins ide javascript ")
+            } else if (value.length == 0) {
+                let optGroup = document.getElementById("optgroupJava");
+                optGroup.style.display = "none";
+                let optGroup1 = document.getElementById("optgroupJavascript");
+                optGroup1.style.display = "none";
+                console.log(" Ins ide javascript ")
+            }
+        }
+    </script>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>

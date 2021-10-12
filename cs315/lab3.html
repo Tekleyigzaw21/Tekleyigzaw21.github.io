@@ -1,0 +1,316 @@
+<html>
+<heading>
+    <h1>"My Heading"</h1>
+</heading>
+
+<body>
+    <p>“ Hi I am there”</p>
+    <br>
+    <input id="myTextField" type="text" value="first" />
+    <br>
+    <p style="color:pink" </p>
+        <br>
+        <lable>"First Name"</lable>
+        <br>
+        <input type="button" onclick="add()" value="add" />
+        <br>
+
+    <table>
+        <caption><b>Table</b></caption>
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Class</th>
+            <th colspan="3">Subject</th>
+            <th colspan="4">Score</th>
+        </tr>
+        <tr>
+            <td>Tekle</td>
+            <td colspan="2">12</td>
+            <td colspan="3">CS</td>
+            <td colspan="4">95</td>
+        </tr>
+        <tr rowspan="2">
+            <td>Piter</td>
+            <td colspan="2">12</td>
+            <td colspan="3">CS315</td>
+            <td colspan="4">85</td>
+        </tr>
+        <tr rowspan="3">
+            <td>John</td>
+            <td colspan="2">12</td>
+            <td colspan="3">CS315</td>
+            <td colspan="4">99</td>
+        </tr>
+    </table>
+
+    <br>
+    <br>
+
+    <head> orderdList</head>
+    <ol>
+        <li>Hilton</li>
+        <li>RasDashen</li>
+        <li>Dilla</li>
+        <li>Asinuara</li>
+    </ol>
+
+    <head> unorderdList</head>
+    <ul>
+        <li>vacation friends</li>
+        <li> free Guy</li>
+        <li> mezmure </li>
+    </ul>
+
+    <a href="https://www.pinterest.com/pin/879327895964877434/">
+        <img src="https://i.pinimg.com/564x/71/3a/07/713a07eab9077cc738e22404c22af99d.jpg" alt="HTML tutorial">
+    </a>
+
+    <script>
+        // function add() {
+        //     let text = document.getElementsByTagName("p")
+        //     text.innerText = "Hi I am there";
+        //     //alert(text)
+        //     text.type.style.color = "pink";
+        // }
+
+        function creat() {
+            <input id="myTextField" type="text" value="first" />
+            let ids = document.getElementById("myTextField")
+            ids.id = "myTextField";
+            ids.value = "first";
+            console.log(inputElements.length)
+        }
+
+    </script>
+
+
+
+
+    <!-- DOM Selection
+
+2. Find all paragraph elements
+
+let  allelemnt=document.quarySelector("p");
+
+for(let all of allelement){
+
+alert(all);
+
+};
+
+3. Find paragraph element inside div
+
+let  allelemnt=document.quarySelector("div p");
+
+for(let all of allelement){
+
+alert(all);
+
+}   ;
+
+
+
+
+4. Get all Input fields
+let allfiled=document.quarySelectorAll('input[type=text]');
+5. Get Input field with id, “myField”
+let input=document.quarySelector("#myId");
+6. Get only Text Input fields
+let allinput=document.quaryselector('input[type=text]');
+7. Get all h1 elements
+Find all paragraph elements
+let  allelemnt=document.quarySelector("h");
+for(let all of allelement){
+alert(all);
+};
+
+8. Get h1 element inside p -->
+    <!-- let allelemnt=document.quarySelector("p>h1");
+
+    for(let all of allelement){
+
+    alert(all);
+
+    } -->
+
+    </script>
+
+
+
+    <!-- MocQ1 -->
+    <html>
+
+    <head>
+        <style>
+            /* label[for='fruits']{
+            color:red;
+        } */
+            div label {
+                color: red;
+            }
+        </style>
+    </head>
+
+    <body data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
+        <p>I am here</p>
+        <label for="flowers">Flowers</label>
+        <ol>
+            <li> Rose</li>
+            <li>Chamalion</li>
+        </ol>
+        <div>
+            <label for="fruits">Fruits</label>
+            <ol>
+                <li>Mango</li>
+                <li>Pear</li>
+            </ol>
+
+            <script>
+        //document.querySelector("label[for='fruits']").style.color="red"
+
+        //document.querySelector("ol li").style.textDecoration="underline";
+        //document.querySelector("div ol li").style.textDecoration="underline";
+
+        // document.querySelectorAll("ol li")[0].style.textDecoration="underline";
+        // document.querySelectorAll("ol li")[2].style.textDecoration="underline";
+            </script>
+
+
+            <!-- 1. Write Javascript code to underline all the first element of ol (Rose,Mango should be underlined)
+    2. a. Apply red color to the label, Fruits (Javascript)
+       b. Same as(a) with CSS -->
+        </div>
+    </body>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+    </html>
+    <!-- MocQ2 -->
+    <html>
+
+    <head>
+        <style>
+            body {
+                margin: 10px
+            }
+
+            label {
+                width: 10%;
+                display: inline-block;
+            }
+
+            input[type="text"] {
+                width: 20%;
+            }
+        </style>
+    </head>
+
+    <body data-new-gr-c-s-check-loaded="14.1031.0" data-gr-ext-installed="">
+        <h1> Your Job Application</h1>
+        <p>
+            <label for="fullName">Full Name</label>
+            <input type="text" value="My Name" onfocus="turnRed(this)" onblur="turnwhite(this)">
+        </p>
+        <p>
+            <label for="">Email</label>
+            <input type="text" id="first" value="">
+        </p>
+
+        <p>
+            <label for="select">Select Role</label>
+
+            <select name="role">Role
+                <option value="QA">QA Engineer</option>
+                <option value="intern">Software Intern</option>
+                <option value="developer">Software Developer</option>
+            </select>
+            <!-- <myowntag newI="ree" >sdfsdfsdff</myowntag> -->
+            <!-- document.querySelector("myowntag[newI='ree']");
+            .innerHTML -->
+        </p>
+        <p>
+            Skill sets<br>(Select all that apply)
+
+            <input type="checkbox" value="java" name="check" onclick="checkMe(this)">Java
+            <input type="checkbox" value="javascript" name="check" onclick="checkMe(this)">Javascript
+            <br>
+        </p>
+        <p>
+            <label for="select">Specific Skills</label>
+            <select name="specificSkills" multiple="" size="7" style="width:20%"> ​
+                <optgroup label="Java" id="optgroupJava"> ​
+                    <option value="J2EE">J2EE</option> ​
+                    <option value="Spring">Spring</option>​
+                    <option value="Hibernate">Hibernate</option>​
+                </optgroup> ​
+                <optgroup label="Javascript" id="optgroupJavascript"> ​
+                    <option value="ReatJS">ReatJS</option> ​
+                    <option value="AngularJS">AngularJS</option> ​
+                </optgroup> ​
+            </select>
+        </p>
+        <p>
+            <input type="submit" value="Submit" onclick="submit()">
+        </p>
+        <p></p>
+        <p></p>
+        <script>
+            function submit() {
+                let select = document.getElementsByName("specificSkills")[0];
+                let values = ""
+                for (let eachControl of select.options) {
+                    console.log(eachControl.value, eachControl.selected);
+                    if (eachControl.selected)
+                        values += eachControl.value;
+                }
+                alert(values)
+            }
+            function turnRed(inputField) {
+                // document.getElementById("first")
+                inputField.style.backgroundColor = "green";
+            }
+            function turnwhite(inputField) {
+                inputField.style.backgroundColor = "white";
+            }
+            function checkMe(inputField) {
+                let controls = document.getElementsByName("check");
+                let value = [];
+                for (let eachControl of controls) {
+                    console.log(eachControl, eachControl.checked);
+                    if (eachControl.checked)
+                        value.push(eachControl.value);
+                }
+
+                if (value.length == 1 && value[0] == "java") {
+                    let optGroup = document.getElementById("optgroupJavascript");
+                    optGroup.style.display = "none";
+                    let optGroup1 = document.getElementById("optgroupJava");
+                    optGroup1.style.display = "";
+                    console.log(" Ins ide java ")
+                } else if (value.length == 1 && value[0] == "javascript") {
+                    let optGroup = document.getElementById("optgroupJava");
+                    optGroup.style.display = "none";
+                    let optGroup1 = document.getElementById("optgroupJavascript");
+                    optGroup1.style.display = "";
+                    console.log(" Ins ide javascript ")
+                } else if (value.length == 2) {
+                    let optGroup = document.getElementById("optgroupJava");
+                    optGroup.style.display = "";
+                    let optGroup1 = document.getElementById("optgroupJavascript");
+                    optGroup1.style.display = "";
+                    console.log(" Ins ide javascript ")
+                } else if (value.length == 0) {
+                    let optGroup = document.getElementById("optgroupJava");
+                    optGroup.style.display = "none";
+                    let optGroup1 = document.getElementById("optgroupJavascript");
+                    optGroup1.style.display = "none";
+                    console.log(" Ins ide javascript ")
+                }
+
+            }
+        </script>
+
+
+    </body>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+    </html>
